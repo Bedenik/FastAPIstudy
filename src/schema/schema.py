@@ -2,7 +2,6 @@
 from pydantic import BaseModel
 from typing import Optional, List
 
-
 class Product(BaseModel):
     id: Optional[str] = None 
     name: str
@@ -15,8 +14,9 @@ class Product(BaseModel):
 class User(BaseModel):
     id: Optional[str] = None 
     name: str
-    telefone: str
-    cpf: str  
+    telefone: str 
+    password: str
+   # products: List[products] = []
    
 
 
